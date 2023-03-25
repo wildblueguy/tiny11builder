@@ -1,3 +1,5 @@
+[Source](https://www.tomshardware.com/how-to/make-lightweight-windows-11-image-tiny11-builder)
+
 # tiny11builder
 
 Scripts to build a trimmed-down Windows 11 image.
@@ -11,6 +13,7 @@ As of now, only build 22621.525 (the one that can be downloaded from the Microso
 Instructions:
 
 1. Download Windows 11 22621.1265 from UUPDump or 22621.525 or 25300 from the Microsoft website (<https://www.microsoft.com/software-download/windows11>)
+1a. UUPDump .1265 link (select Pro, don't include updates): https://uupdump.net/download.php?id=2c34b461-1255-485f-8845-420f1e8ba2e3&pack=en-us&edition=professional
 2. Mount the downloaded ISO image using Windows Explorer.
 3. For .1265, run tiny11 creator.bat as administrator. For .525 or 25300, use the aptly-named script (also as administrator).
 4. Select the drive letter where the image is mounted (only the letter, no colon (:))

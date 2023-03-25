@@ -123,10 +123,10 @@ dism /image:c:\scratchdir /Remove-Package /PackageName:Microsoft-Windows-Wallpap
 echo Removing Edge:
 rd "C:\scratchdir\Program Files (x86)\Microsoft\Edge" /s /q
 rd "C:\scratchdir\Program Files (x86)\Microsoft\EdgeUpdate" /s /q
-echo Removing OneDrive:
-takeown /f C:\scratchdir\Windows\System32\OneDriveSetup.exe
-icacls C:\scratchdir\Windows\System32\OneDriveSetup.exe /grant Administrators:F /T /C
-del /f /q /s "C:\scratchdir\Windows\System32\OneDriveSetup.exe"
+:: echo Removing OneDrive:
+:: takeown /f C:\scratchdir\Windows\System32\OneDriveSetup.exe
+:: icacls C:\scratchdir\Windows\System32\OneDriveSetup.exe /grant Administrators:F /T /C
+:: del /f /q /s "C:\scratchdir\Windows\System32\OneDriveSetup.exe"
 echo Removal complete!
 timeout /t 2 /nobreak > nul
 cls
